@@ -21,7 +21,7 @@ print "#{arr}\n"
 
 #Convertir valores a enteros.
 arr.map! do |ele|
-    ele = ele.to_i
+    ele = ele.to_f
 end
 
 #Tercer test output.
