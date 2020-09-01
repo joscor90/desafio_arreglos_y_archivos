@@ -6,6 +6,7 @@ def ventas_totales(arr)
     end
     return suma
 end
+
 #Lectura del archivo.
 data = open("ventas_base.db").read 
 
@@ -46,7 +47,7 @@ for i in 0..11 do
     end
 end
 
-#Cuarto test output
+#Cuarto test output.
 puts "Probando arreglos simulados"
 puts "Arreglo original"
 print "#{arr}\n"
@@ -55,3 +56,24 @@ print "#{primer_semestre}\n"
 puts "Simulación segundo semestre"
 print "#{segundo_semestre}\n"
 
+#Usando el método ventaes totales en cada simulacion.
+primer_semestre_total = ventas_totales(primer_semestre)
+segundo_semestre_total = ventas_totales(segundo_semestre)
+
+#Quinto output de prueba.
+
+puts "Ventas totales usando simulacion del primer semestre"
+print "#{primer_semestre_total}\n"
+puts "Ventas totales usando simulacion del segundo semestre"
+print "#{segundo_semestre_total}\n"
+
+
+#Creación del archivo para pasar los datos
+
+open("resultados.data", "w") do |x|
+    x << "#{primer_semestre_total}\n"
+    x << "#{segundo_semestre_total}"
+end
+
+
+    
