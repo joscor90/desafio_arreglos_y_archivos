@@ -1,5 +1,12 @@
-def ventas_semestrales(arr, mult)
+def ventas_semestrales(arr, factor)
     suma = 0
+    arr.each do |ele|
+        ele = ele*
+        suma += ele
+    end
+    return suma
+end
+
 
 #Lectura del archivo.
 data = open("ventas_base.db").read 
@@ -21,3 +28,4 @@ end
 #Tercer test output
 print "#{arr}\n"
 
+#Usando el método ventas_semestrales
