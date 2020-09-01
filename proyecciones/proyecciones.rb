@@ -1,3 +1,11 @@
+#Método de ventas totales
+def ventas_totales(arr)
+    suma = 0
+    arr.each do |ele|
+        suma += ele
+    end
+    return suma
+end
 #Lectura del archivo.
 data = open("ventas_base.db").read 
 
@@ -46,8 +54,4 @@ puts "Simulación primer semestre"
 print "#{primer_semestre}\n"
 puts "Simulación segundo semestre"
 print "#{segundo_semestre}\n"
-
-
-
-
 
