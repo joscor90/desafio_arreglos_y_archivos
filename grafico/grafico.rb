@@ -11,7 +11,7 @@ def chart(arr)
     puts
 end
 
-#Calling chart
-chart([2, 3, 4, 5, 3, 3, 3, 6, 10, 20, 7])
+#Calling chart and test output
+chart([1, 3, 4, 4, 6, 10])
 
 
